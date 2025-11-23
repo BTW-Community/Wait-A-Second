@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "wait_a_sec",
+  "version": "${version}",
+  "name": "Wait A Sec",
+  "description": "Stop being disturbed while in your inventory",
+  "authors": [
+    "DraViGen"
+  ],
+  "contact": {
+    "homepage": "https://github.com/DraViGen",
+    "sources": "https://github.com/BTW-Community/Wait-A-Sec"
+  },
+  "license": "CC-BY-4.0",
+  "icon": "assets/wait_a_sec/icon.jpg",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.dravigen.wait_a_sec.WaitASecMod"
+    ],
+    "btw:addon": [
+      "net.dravigen.wait_a_sec.WaitASecAddon"
+    ]
+  },
+  "custom": {
+    "btw:addon_prefix": "EX"
+  },
+  "mixins": [
+    "wait_a_sec.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "minecraft": "1.6.4"
+  }
+}
